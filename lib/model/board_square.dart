@@ -1,6 +1,8 @@
 class BoardSquare {
   bool hasBomb;
-  int bombAround;
+  int bombsAround;
+  bool isOpen;
+  bool isFlagged;
 
-  BoardSquare({this.hasBomb=false,this.bombAround=0});
+  BoardSquare({this.hasBomb=false,this.bombsAround=0,this.isOpen=false,this.isFlagged=false});
 }
