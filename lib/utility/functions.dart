@@ -1,5 +1,6 @@
 import 'dart:math';
 
+import 'package:flutter/material.dart';
 import 'package:mine_sweeper_2/page/game_page.dart';
 
 void setBoard() {
@@ -75,3 +76,28 @@ bool isWon () {
   else print("Not yet");
   return false;
 }
+
+Color myColor(int num) {
+  Color resColor;
+  switch (num) {
+    case 1 : resColor=Colors.blue[900]!;
+    break;
+    case 2 : resColor=Colors.green;
+    break;
+    case 3 : resColor=Colors.red;
+    break;
+    case 4 : resColor=Colors.purple;
+    break;
+    case 5 : resColor=Colors.brown[800]!;
+    break;
+    case 6 : resColor=Colors.orange;
+    break;
+    case 7 : resColor=Colors.tealAccent;
+    break;
+    default :
+    resColor = Colors.black;
+      
+  }
+  return resColor;
+}
+

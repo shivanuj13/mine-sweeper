@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:mine_sweeper_2/page/game_page.dart';
 
+import 'functions.dart';
+
 class Square extends StatefulWidget {
   //Square({Key? key}) : super(key: key);
   final int? rowNum;
@@ -105,11 +107,16 @@ class _OpenTileState extends State<OpenTile> {
         child: Text("\u2739",style: TextStyle(color: Colors.red,fontSize: 30,fontWeight: FontWeight.bold),),
       ),
     );
+    if(board[widget.rowNum!][widget.colNum!].bombsAround==0)
+    return Container(
+      color: Colors.black12,
+      margin: EdgeInsets.all(2.0),
+    );
     
     return Container(
       color: Colors.black12,
       margin: EdgeInsets.all(2.0),
-      child: Center(child: Text(board[widget.rowNum!][widget.colNum!].bombsAround.toString(),style: TextStyle(color: Colors.blue[900],fontSize: 27,fontWeight: FontWeight.bold))),
+      child: Center(child: Text(board[widget.rowNum!][widget.colNum!].bombsAround.toString(),style: TextStyle(color: myColor(board[widget.rowNum!][widget.colNum!].bombsAround),fontSize: 27,fontWeight: FontWeight.bold))),
     );
   }
 }
