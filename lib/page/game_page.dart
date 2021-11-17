@@ -58,7 +58,7 @@ class _GamePageState extends State<GamePage> {
                    builder: (context) {
                   return AlertDialog(
                    title: Text("Game Over!"),
-                    content: Text("Mine press kar diye bhai!"),
+                    content: Text("You have pressed the mine!"),
                    actions: <Widget>[
                     ElevatedButton(
                     onPressed: () {

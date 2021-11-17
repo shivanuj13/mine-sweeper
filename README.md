@@ -1,16 +1,20 @@
-# mine_sweeper_2
+# Mine Sweeper
 
-A new Flutter project.
+It is a Flutter project based on mine sweeper game.
 
-## Getting Started
+## project description
 
-This project is a starting point for a Flutter application.
+This is a basic game of mine sweeper.
 
-A few resources to get you started if this is your first Flutter project:
+## technologies used
+- flutter
+- dart
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## screenshots
+<p float="left">
+<img src="screenshot/1637170293353.jpg" width="30%">
+<img src="screenshot\1637170859212.jpg" width="30%">
+</p>
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+*any contribution will be appreciated.*
